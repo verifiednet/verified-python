@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "verified-net"
+version = "1.0.0"
+description = "Official Python client for the Verified.net email, phone, carrier and IP verification API"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Verified.net" }]
+keywords = ["email verification", "email validation", "phone validation", "carrier lookup", "ip intelligence", "fraud"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Communications :: Email",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://verified.net"
+Documentation = "https://verified.net/docs"
+Source = "https://github.com/verifiednet/verified-python"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/verified_net"]
